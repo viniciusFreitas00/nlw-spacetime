@@ -22,6 +22,7 @@ app.register(AuthRotes)
 app
   .listen({
     port,
+    host: '0.0.0.0',
   })
   .then(() => {
     console.log(`🚀 HTTP server running on port ${3333}`)
